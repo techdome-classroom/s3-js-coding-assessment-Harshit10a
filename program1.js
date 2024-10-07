@@ -8,7 +8,7 @@ var isValid = function(s) {
     for(let char of s){
         if(char in bracketMap){
             let topElement = stack.length>0?stack.pop():'#';
-            
+            if(bracketMap[char]!=top)
         }
     }
 };
