@@ -9,7 +9,7 @@ var isValid = function(s) {
         if(char in bracketMap){
             let topElement = stack.length>0?stack.pop():'#';
             if(bracketMap[char]!=topElement)return false;
-            else 
+            else stack.push(char);
         }
     }
 };
